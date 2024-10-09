@@ -58,6 +58,24 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git_RTS\tb002\third_party\Qwt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\git_RTS\tb002\third_party\Qwt\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qwtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git_RTS\tb002\third_party\Qwt\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\git_RTS\tb002\third_party\Qwt\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qwt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -88,6 +106,7 @@
     <ClCompile Include="ChartThread.cpp" />
     <ClCompile Include="LpUniversalChartPrivate.cpp" />
     <ClCompile Include="lpuniversalchart_global.cpp" />
+    <ClCompile Include="lpUpdataChart.cpp" />
     <QtMoc Include="LpUniversalChartPrivate.h" />
     <QtMoc Include="lpuniversalchart_global.h" />
   </ItemGroup>
@@ -96,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ChartThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="lpUpdataChart.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

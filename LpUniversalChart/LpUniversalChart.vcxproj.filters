@@ -32,6 +32,9 @@
     <ClCompile Include="ChartThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lpUpdataChart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="LpUniversalChart.ui">
@@ -46,6 +49,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="ChartThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="lpUpdataChart.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

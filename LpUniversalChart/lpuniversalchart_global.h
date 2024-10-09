@@ -2,6 +2,7 @@
 
 #include <QtCore/qglobal.h>
 #include <QWidget>
+#include <QDebug>
 
 #ifndef BUILD_STATIC
 # if defined(LPUNIVERSALCHART_LIB)
