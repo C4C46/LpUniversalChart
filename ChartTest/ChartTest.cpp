@@ -1,23 +1,17 @@
 ﻿#include "ChartTest.h"
 #pragma execution_character_set("utf-8")
-ChartTest::ChartTest(QWidget *parent)
-    : QWidget(parent)
+ChartTest::ChartTest(QMainWindow *parent)
+    : QMainWindow(parent)
 {
     ui.setupUi(this);
     m_Chart = new LpUniversalChart(this);
 
-    // 创建一个水平布局
-    QHBoxLayout *layout = new QHBoxLayout(ui.widget);
+    ui.dockWidget->setWidget(m_Chart);
 
-    // 将 LpUniversalChart 添加到布局中
-    layout->addWidget(m_Chart);
-
-    // 设置布局到 ChartTest
-    setLayout(layout);
 
     m_timer = new QTimer(this);
     connect(m_timer, &QTimer::timeout, this, &ChartTest::sendData);
-    m_timer->start(100);
+    m_timer->start(10);
 }
 
 ChartTest::~ChartTest()

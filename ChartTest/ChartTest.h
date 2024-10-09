@@ -2,6 +2,8 @@
 
 #include <QtWidgets/QWidget>
 #include <QHBoxLayout>
+#include <QMainWindow>
+#include <QApplication>
 #include <QTimer>
 #include <QDateTime>
 #include "ui_ChartTest.h"
@@ -9,12 +11,12 @@
 
 class LpUniversalChart;
 
-class ChartTest : public QWidget
+class ChartTest : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    ChartTest(QWidget *parent = nullptr);
+    ChartTest(QMainWindow *parent = nullptr);
     ~ChartTest();
 
 private slots:

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>897</width>
+    <width>740</width>
     <height>501</height>
    </rect>
   </property>
@@ -14,36 +14,8 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
-   <item row="0" column="0">
-    <widget class="QDockWidget" name="dock1">
-     <widget class="QWidget" name="dockWidgetContents">
-      <layout class="QGridLayout" name="gridLayout_3">
-       <item row="0" column="0">
-        <widget class="QTreeWidget" name="treeWidget">
-         <column>
-          <property name="text">
-           <string notr="true">1</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-   </item>
    <item row="0" column="1">
-    <widget class="QDockWidget" name="dock2">
-     <property name="acceptDrops">
-      <bool>false</bool>
-     </property>
-     <widget class="QWidget" name="dockWidgetContents_2">
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QWidget" name="widget" native="true"/>
-       </item>
-      </layout>
-     </widget>
-    </widget>
+    <widget class="QWidget" name="widget" native="true"/>
    </item>
   </layout>
  </widget>
