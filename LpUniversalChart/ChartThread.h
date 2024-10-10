@@ -5,7 +5,7 @@
 #include <QTimer>
 #include <QQueue>
 #include <QDebug>
-#define XAISX_RANGE 5 //设置X轴的范围
+#define XAISX_RANGE 10 //设置X轴的范围
 #define METER_THRESHOLD 200
 class ChartThread : public QObject
 {

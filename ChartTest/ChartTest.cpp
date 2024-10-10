@@ -24,10 +24,10 @@ void ChartTest::sendData()
 {
     QString curveName = "测试名称";
     double y = qrand() % 100; // 随机生成 y 值
-
+        // 递增 x 值
+    m_xValue += 1;
     // 调用 LpUniversalChart 的 DataChart 方法
     m_Chart->DataChart(curveName, m_xValue, y);
 
-    // 递增 x 值
-    m_xValue += 0.1;
+
 }

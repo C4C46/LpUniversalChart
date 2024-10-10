@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QDebug>
 
+
 #ifndef BUILD_STATIC
 # if defined(LPUNIVERSALCHART_LIB)
 #  define LPUNIVERSALCHART_EXPORT Q_DECL_EXPORT

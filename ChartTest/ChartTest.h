@@ -26,5 +26,7 @@ private:
     Ui::ChartTestClass ui;
     LpUniversalChart *m_Chart;
     QTimer* m_timer;
-    double m_xValue;
+    double m_xValue = 0;
+    double m_yValue = 10; // 初始y10
+    bool m_isIncrementing = true; 
 };
